@@ -12,16 +12,16 @@ import random
 
 
 
-listex = [0,1,2,3,4,5,6,7,8,9]
+listex = range(0,10)
 
 liste_pairs = []
 
 def randomizer(liste, liste_pairs):
     i=0
     liste1 = liste
-    print(liste1)
+    print(liste1,len(liste))
     
-    while i < 4:
+    while i < len(liste)/2+2:
         
         a = random.randint(0,len(liste1))-1
         
