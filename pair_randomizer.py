@@ -31,7 +31,7 @@ def randomizer(liste, liste_pairs):
         
         pair2 = liste[b]
         
-        liste_pairs.append([pair1,pair2])
+        liste_pairs.append([pair1, pair2])
         
         del liste[b]
         
@@ -41,8 +41,8 @@ def randomizer(liste, liste_pairs):
     return liste_pairs
     
     
-randomizer(liste, liste_pairs)
-print(liste_pairs)
+print(randomizer(liste, liste_pairs))
+
 
     
     
