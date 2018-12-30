@@ -12,18 +12,18 @@ import random
 
 
 
-listex = range(0,100)
+listex = range(0,54)
 
 liste_pairs = []
 
 def randomizer(liste, liste_pairs):
-    i=0
+    i=2
     liste1 = []
     liste1 = liste
-    print(liste1,len(liste))
+    #print(liste1,len(liste))
     
-    while i < len(liste)/2+2:
-        
+    while i <= len(liste1)/2:
+
         a = random.randint(0,len(liste1))-1
         
         pair1 = liste1[a]
@@ -39,16 +39,22 @@ def randomizer(liste, liste_pairs):
         
         del liste1[b]
         
-        i = i+1
     
     liste_pairs.append([liste1[0],liste1[1]])
     
-    del (liste1[0],liste1[1])
+    del (liste1[0])
+    
+    del (liste1[0])
+    
+    print("number of pairs", len(liste_pairs))
+    
     return liste_pairs
     
     
+    
+
+    
 print(randomizer(listex, liste_pairs))
-print listex
 
 
 
