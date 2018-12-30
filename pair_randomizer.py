@@ -12,12 +12,13 @@ import random
 
 
 
-listex = range(0,10)
+listex = range(0,100)
 
 liste_pairs = []
 
 def randomizer(liste, liste_pairs):
     i=0
+    liste1 = []
     liste1 = liste
     print(liste1,len(liste))
     
@@ -41,10 +42,13 @@ def randomizer(liste, liste_pairs):
         i = i+1
     
     liste_pairs.append([liste1[0],liste1[1]])
+    
+    del (liste1[0],liste1[1])
     return liste_pairs
     
     
 print(randomizer(listex, liste_pairs))
+print listex
 
 
 
